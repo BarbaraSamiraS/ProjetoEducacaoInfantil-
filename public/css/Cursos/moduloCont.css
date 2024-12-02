@@ -1,0 +1,143 @@
+/* Modulos */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+article .modulos {
+    height: 35%;
+    width: 100%;
+}
+
+
+article .modulos .playmodulo{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 4px;
+    
+}
+
+
+
+
+article .modulos .playmodulo .mod{ 
+    height: 100%;
+    min-width: 23%;
+    border-radius: 20px;
+    border: none;
+    transition: all 1s ease;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article .modulos .playmodulo .mod img{ 
+    height: 100%;
+    min-width: 100%;
+}
+
+article .modulos .playmodulo .mod.active{ 
+    box-shadow: 0px 0px 10px #c52aca;
+}
+
+article .modulos .playmodulo .mod.active span{ 
+    background: linear-gradient(350deg,#3229C9 10%, #8035DB 90%);
+    bottom: -60%;
+    left: -5px;
+    transform: rotate(11.51deg);
+}
+
+article .modulos .playmodulo .mod.active h1 {
+    bottom:35px;
+    
+}
+
+article .modulos .playmodulo .mod.active p {
+    display: block;
+    opacity: 1;
+    font-size: 0.8em;
+    color: #ffffff;
+    bottom: 15px;
+    left: 15px;
+}
+
+article .modulos .playmodulo .mod span{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -70%;
+    background: linear-gradient(350deg,#111B44 10%, #111444 90%);
+    transform: rotate(6deg);
+    left: -5px;
+    transition: all 1s ease;
+}
+
+article .modulos .playmodulo .mod:hover span{ 
+    bottom: -60%;
+    left: -5px;
+    transform: rotate(11.51deg);
+}
+
+
+
+article .modulos .playmodulo .mod h1 {
+    color: #ffffff;
+    bottom:15px;
+    position: absolute;
+    left: 15px;
+    transition: all 1s ease;
+    font-size: 1em;
+    font-family: "Audiowide", sans-serif;
+}
+
+article .modulos .playmodulo .mod:hover h1 {
+    bottom:35px;
+    
+}
+
+article .modulos .playmodulo .mod p {
+    opacity: 0;
+    font-size: 0.7em;
+    bottom: -5px;
+    position: absolute;
+    transition: all 1s ease;
+    left: 15px;
+    text-align: left;
+}
+
+article .modulos .playmodulo .mod:hover p {
+    display: block;
+    opacity: 1;
+    font-size: 0.7em;
+    color: #ffffff;
+    bottom: 15px;
+    left: 15px;
+}
+
+article .modulos .playmodulo .mod #example {
+    display: none;
+}
+
+article .modulos .playmodulo::-webkit-scrollbar {
+    height: 4px; 
+}
+
+article .modulos .playmodulo::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 10px;
+}
+
+article .modulos .playmodulo::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #eea2de, #8a62ca); 
+    border-radius: 10px;
+}
+
+article .modulos .playmodulo::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #da35b680, #672aca80); 
+}

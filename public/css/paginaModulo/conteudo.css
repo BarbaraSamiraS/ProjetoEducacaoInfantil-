@@ -1,0 +1,37 @@
+.conteudoPart{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 0;
+}
+
+.conteudoPart .caixa {
+    display: none;
+    width: 90%;
+    height: 95vh;
+    background: url(/imgs/ModPage/conteudoModDesc.png);
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudoPart .caixa.active{
+    display: flex;
+}
+
+
+.conteudoPart .caixa .textos{
+    color: aliceblue;
+    width: 80%;
+    height: 70%;
+}
+
+.conteudoPart .caixa .textos .paragrafos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 10px;
+}

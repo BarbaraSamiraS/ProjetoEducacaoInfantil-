@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: linear-gradient(25deg, rgba(39,16,48,1) 32%, rgba(39,16,48,0.8911939775910365) 48%, rgba(39,16,48,0.7539390756302521) 67%, rgba(39,16,48,0.6054796918767507) 78%, rgba(39,16,48,0.49343487394957986) 88%), url(/imgs/CursosPage/fundoConteudo.png) 20% ;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Lado Principal */
+
+article {
+    width: 72%;
+    height: 100%;
+    padding: 15px 30px;
+    color:#fff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+article  h1{
+    font-size: 20px;
+    
+}
+article  h2{
+    font-size: 15px;
+    height: 20%;
+    justify-content: center;
+}
+article  p{
+    font-size: 12px;
+    color:#c0bcbc;
+}
+
+
+/* Apresentação */
+
+article .apresentacao {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content:top;
+    align-items: top;
+    flex-direction: column;
+    gap: 10px;
+}
+
+article .apresentacao h1{
+    font-family: "Audiowide", sans-serif;
+}
+

@@ -1,0 +1,75 @@
+/* Conteudo */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+article .conteudo {
+    height: 30%;
+    width: 100%;
+}
+
+article .conteudo .playcurso {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+}
+
+article .conteudo .playcurso .curso{
+    height: 78%;
+    min-width: 19%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 3px 5px #000;
+    transition: all 1s ease;
+    color: #fff;
+    text-shadow: 2px 3px 5px #000;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 18px 10px;
+}
+
+article .conteudo .playcurso .curso.active {
+    height: 100%;
+    min-width: 25%;
+}
+ 
+/*Imag dos Conteudos*/
+#cyber {
+    background: linear-gradient(0deg, #7a35da80, #372aca80), url(/imgs/CursosPage/conteudo/cyber.png) 20% ;
+    background-size: cover;
+}
+#inter {
+    background: linear-gradient(0deg, #7a35da80, #372aca80), url(/imgs/CursosPage/conteudo/inter.png) 20% ;
+    background-size: cover;
+}
+#prog {
+    background: linear-gradient(0deg, #7a35da80, #372aca80), url(/imgs/CursosPage/conteudo/program.png) 20% ;
+    background-size: cover;
+}
+#logi {
+    background: linear-gradient(0deg, #7a35da80, #372aca80), url(/imgs/CursosPage/conteudo/log.png) 20% ;
+    background-size: cover;
+}
+
+article .conteudo .playcurso::-webkit-scrollbar {
+    height: 4px; 
+}
+
+article .conteudo .playcurso::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 10px;
+}
+
+article .conteudo .playcurso::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #eea2de, #8a62ca); 
+    border-radius: 10px;
+}
+
+article .conteudo .playcurso::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #da35b680, #672aca80); 
+}

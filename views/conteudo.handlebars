@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambient Light Effects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/paginaModulo/teste.css">
+    <link rel="stylesheet" href="css/paginaModulo/icon.css">
+    <link rel="stylesheet" href="css/paginaModulo/conteudo.css">
+    <link rel="stylesheet" href="css/paginaModulo/buttons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="columTopic">
+            <button class="iconTop">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+            <div class="tamanho">
+                {{> topicos}}
+            </div>
+            <button class="iconBottom">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+        {{> conteudoPart}}
+        
+    </div>
+    <script src="js/conteudo.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="css/Cursos/apresentacaoCont.css">
+    <link rel="stylesheet" href="css/Cursos/asideCont.css">
+    <link rel="stylesheet" href="css/Cursos/conteudoCont.css">
+    <link rel="stylesheet" href="css/Cursos/moduloCont.css">
+    <link rel="stylesheet" href="css/Cursos/recomendacaoCont.css">
+</head>
+<body>
+    <article>
+        <div class="apresentacao">
+            <h1>Olá, {{nome}}!</h1>
+            
+            <p>Neste módulo, as crianças vão aprender sobre a importância de proteger suas informações online. Vamos explorar de forma simples e divertida como manter a privacidade, identificar perigos comuns na internet e a importância de criar senhas fortes. Esse é o primeiro passo para que os jovens compreendam o valor da segurança no ambiente digital.</p>
+        </div>
+        <div class="conteudo">
+            <h2>Conteudo</h2>
+            <div class="playcurso">
+                {{#each cursoDados.playcurso}}
+                <button class="{{this.clase}}" id="{{this.id}}">
+                    <h1>{{this.titulo}}</h1>
+                </button>
+                {{/each}}
+            </div>
+        </div>
+        <div class="recomendacoes">
+            <h2>Recomendações</h2>
+            <div class="playRecoment">
+                {{#each cursoDados.playRecoment}}
+                <div class="reco">
+                    <div class="reco-num">{{this.num}}</div>
+                    <div class="reco-text">
+                        <h5>Modulo {{this.num}}</h5>
+                        <h6>{{this.texto}}</h6>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                    </svg>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="modulos">
+            <h2>Modulos</h2>
+            <div class="playmodulo">
+                {{#each cursoDados.playmodulo}}
+                <button class="mod"> 
+                    <img src="imgs/CursosPage/modulos/cyber/{{this.image}}" alt="" id="mod{{this.numero}}">
+                    <span></span>
+                    <h1>Modulo {{this.numero}}</h1>
+                    <p class="descMod{{this.numero}}">{{this.titulo}}</p>
+                    <div class="example{{this.numero}}" id="example">cyber</div>
+                </button> 
+                {{/each}}
+            </div>
+        </div>
+    </article>
+    <aside>
+        <div class="test">
+            <img class="imageModInfo" src="imgs/CursosPage/modulos/cyber/cyberMod1.png" alt="">
+            <div class="textoModulo">
+                <h1 class="titleModInfo">Descrição</h1>
+                <h5 class="subTitleModInfo"></h5>
+            </div> 
+            <p class="descModInfo">Neste módulo, as crianças vão aprender sobre a importância de proteger suas informações online. Vamos explorar de forma simples e divertida como manter a privacidade, identificar perigos comuns na internet e a importância de criar senhas fortes. Esse é o primeiro passo para que os jovens compreendam o valor da segurança no ambiente digital.</p>
+            <div class="linhaMaior"></div>
+            <div class="ladospersonagem">
+                <div class="bott">
+                <button class="btnModi"><a class="linkImpo" href="/cybersecurity">Conteudo</a></button>
+                <button>Questoões</button>
+            </div>
+            <img src="imgs/mascotes/normais/{{person}}.png" alt="">
+            </div>
+            
+        </div>
+    </aside>
+
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>

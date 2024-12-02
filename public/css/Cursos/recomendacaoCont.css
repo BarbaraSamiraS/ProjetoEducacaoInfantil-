@@ -1,0 +1,78 @@
+/* Recomendações */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+article .recomendacoes {
+    height: 15%;
+    width: 100%;
+}
+
+article .recomendacoes .playRecoment{ 
+    width: 100%;
+    height: 80%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    overflow-x: auto;
+    padding: 4px;
+}
+
+article .recomendacoes .playRecoment .reco{
+    min-width: 20%;
+    display: flex;
+    height: 80%;
+    gap:20px;
+    align-items: center;
+    
+}
+
+article .recomendacoes .playRecoment .reco:hover{
+    box-shadow: 0px 0px 5px #672aca;
+    transition: all 1s ease;
+}
+
+
+article .recomendacoes .playRecoment .reco .reco-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+article .recomendacoes .playRecoment .reco .reco-text h6{
+    font-size: 10px;
+    font-family:monospace;
+}
+
+
+article .recomendacoes .playRecoment .reco .reco-num{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: url(/imgs/CursosPage/recomendacao/recoNum.png);
+    background-size: cover;
+    height: 100%;
+    aspect-ratio: 1;
+    gap: 15px;
+    font-family: "Audiowide", sans-serif;
+    
+}
+
+article .recomendacoes .playRecoment::-webkit-scrollbar {
+    height: 4px; 
+}
+
+article .recomendacoes .playRecoment::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 10px;
+}
+
+article .recomendacoes .playRecoment::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #eea2de, #8a62ca); 
+    border-radius: 10px;
+}
+
+article .recomendacoes .playRecoment::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #da35b680, #672aca80); 
+}
+
+

@@ -1,0 +1,31 @@
+
+  .btn {
+    width: 150px;
+    background-color: #60049e;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    background-color: #60049e;
+  }
+  
+  
+  .btn.transparent {
+    margin: 0;
+    background: none;
+    border: 2px solid #fff;
+    width: 130px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  

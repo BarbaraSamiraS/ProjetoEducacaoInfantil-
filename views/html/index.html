@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/landingpage/styles.css" />
+  <link rel="stylesheet" href="/css/landingpage/header.css" />
+  <link rel="stylesheet" href="/css/landingpage/home.css" />
+  <link rel="stylesheet" href="/css/landingpage/about.css" />
+  <link rel="stylesheet" href="/css/landingpage/personagens.css" />
+  <link rel="stylesheet" href="/css/landingpage/cursos.css" />
+  <title>Educação Digital</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar"> 
+            <i id="nav_logo">Educação Digital</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#personagens">Personagens</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cursos">Cursos</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Módulos
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                O Aprendizado digital essencial para 
+                    <span>você!</span>
+                </h1>
+
+                <p class="description">
+                    Na nossa plataforma voce terá acesso a conteúdos e exercicos para aprimorar o seu conhecimento.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="login" class="btn-default">
+                        Login
+                    </a>
+
+                    <a href="login.html" id="phone_button">
+                        Criar Conta
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="titleAbout">
+            Sobre nossa plataforma
+        </h1>
+
+        <div id="about" class="about">
+            <div id="container1" class="box">
+                <p class="parAbout">A plataforma também prioriza a segurança online, oferecendo um espaço protegido e adequado à faixa etária, para que pais e responsáveis possam ficar tranquilos enquanto os pequenos exploram e aprendem.</p>
+            </div>
+            <div id="container2" class="box">
+                <p class="parAbout">Educação Digital é uma plataforma inovadora criada especialmente para o público infantil. Com um ambiente interativo, colorido e cheio de personagens cativantes como Íris, a plataforma oferece conteúdos educativos.</p>
+            </div>
+            <div id="container3" class="box">
+                <p class="parAbout">
+                    Pensada para o público infantil, ela combina um ambiente colorido e acolhedor com atividades educativas que estimulam a curiosidade e a criatividade das crianças, sempre de forma divertida e interativa.</p>
+            </div>
+            <div id="container4" class="box">
+                <p class="parAbout"> A plataforma combina elementos visuais vibrantes, personagens cativantes e atividades interativas para engajar os pequenos em uma jornada de conhecimento. Aqui, cada clique é uma oportunidade de descobrir algo novo e empolgante.</p>
+            </div>
+        </div>
+
+        <!--
+        <div id= "personagens" class="container">
+        <div class="caixa">
+            <div class="colum">
+                <div class="info">
+                    <div class="dados">
+                        <h1 class="nomes">Irís</h1>
+                        <div class="conteudo">
+                            <div class="topicos">
+                                <p>Íris combina inteligência com criatividade, ajudando os pequenos a explorar temas educativos de forma divertida e envolvente. Ela adora usar sua imaginação para explicar conceitos complicados de maneira simples e está sempre pronta para encorajar as crianças a serem curiosas e confiantes.</p>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+        </div>
+        </div>
+        -->
+
+        <!--
+        <div class="container">
+            <h1>Personagens</h1>
+            <div class="slider">
+              <div class="character active">
+                <div class="info">
+                  <h2>Iris</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed velit non nisi venenatis.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed velit non nisi venenatis.</p>
+                </div>
+                <div class="image">
+                  <img src="/public/imgs/landingPage/PersIris.png" alt="Iris">
+                </div>
+              </div>
+              <div class="character">
+                <div class="info">
+                  <h2>Robo</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar libero ut justo.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar libero ut justo.</p>
+                </div>
+                <div class="image">
+                  <img src="robo.png" alt="Robo">
+                </div>
+              </div>
+            </div>
+            <div class="controls">
+              <button id="prev">◀</button>
+              <button id="next">▶</button>
+            </div>
+          </div>
+        -->
+        
+
+        <h1 class="titleAbout">
+            Nossos cursos
+        </h1>
+
+        <section class="cursos" id="cursos">
+            <button id="prev-button">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          
+            <div class="card-container slider on">
+              <div class="card">
+                <div class="card-left">
+                  <div class="icon-circle">
+                    <img src="/public/imgs/landingPage/logoCyber.png" alt="Ícone de segurança">
+                  </div>
+                  <div class="background-key"></div>
+                </div>
+                <div class="card-right">
+                  <h2>Cyber Segurança</h2>
+                  <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+                  <div class="icons">
+                    <i class="fas fa-trophy"></i>
+                    <i class="fas fa-globe"></i>
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card-container slider">
+              <div class="card">
+                <!--<img src="/public/imgs/landingPage/fundoCyber.jpg" alt=""> -->
+                <div class="card-left">
+                  <div class="icon-circle">
+                    <img src="/public/imgs/landingPage/logoLogica.png" alt="Ícone de segurança">
+                  </div>
+                  <div class="background-key"></div>
+                </div>
+                <div class="card-right">
+                  <h2>Lógica de Programação</h2>
+                  <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+                  <div class="icons">
+                    <i class="fas fa-trophy"></i>
+                    <i class="fas fa-globe"></i>
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container slider">
+                <div class="card">
+                  <div class="card-left">
+                    <div class="icon-circle">
+                      <img src="/public/imgs/landingPage/logoProgramacao.png" alt="Ícone de segurança">
+                    </div>
+                    <div class="background-key"></div>
+                  </div>
+                  <div class="card-right">
+                    <h2>Programação</h2>
+                    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+                    <div class="icons">
+                      <i class="fas fa-trophy"></i>
+                      <i class="fas fa-globe"></i>
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-container slider">
+                <div class="card">
+                  <div class="card-left">
+                    <div class="icon-circle">
+                      <img src="/public/imgs/landingPage/logoInternet.png" alt="Ícone de segurança">
+                    </div>
+                    <div class="background-key"></div>
+                  </div>
+                  <div class="card-right">
+                    <h2>Internet</h2>
+                    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+                    <div class="icons">
+                      <i class="fas fa-trophy"></i>
+                      <i class="fas fa-globe"></i>
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            <button id="next-button">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </section>
+          
+        
+    </main>
+    <script src="/public/js/script.js"></script>
+</body>
+</html>

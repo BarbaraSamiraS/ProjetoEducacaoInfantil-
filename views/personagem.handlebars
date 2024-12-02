@@ -1,0 +1,35 @@
+<title>Mascotes</title>
+<link rel="stylesheet" href="/css/Mascotes/style.css">
+<link rel="stylesheet" href="/css/landingpage/styles.css">
+
+<div class="container">
+    <h1 class="title">
+        Escolha qual personagem irá te guiar nessa jornada de aprendizado:
+    </h1>
+    <form id="personagemForm" action="/atualizarPersonagem" method="POST" style="display: none;">
+        <input type="hidden" name="personagem" id="personagemInput">
+    </form>
+    
+    {{#each personagens}}
+    <div class="card">
+        <img src="/imgs/mascotes/{{this.imagem}}" alt="Imagem do Card">
+        <button onclick="mudarPersonagem('{{this.nome}}'); return false;">{{this.nome}}</button>
+    </div>
+    {{/each}}
+
+</div>
+
+<script>
+    function mudarPersonagem(personagemEscolhido) {
+        console.log(personagemEscolhido);
+        
+        // Seleciona o input pelo ID corretamente
+        const nome = document.querySelector("#personagemInput");
+        
+        // Altera o valor do input usando setAttribute
+        nome.setAttribute("value", personagemEscolhido);
+        
+        // Submete o formulário
+        document.getElementById("personagemForm").submit();
+    }
+</script>

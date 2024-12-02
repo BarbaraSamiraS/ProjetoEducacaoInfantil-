@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/LoginEntrar/main.css" />
+    <link rel="stylesheet" href="/css/LoginEntrar/btns.css" />
+    <link rel="stylesheet" href="/css/LoginEntrar/text.css" />
+    <link rel="stylesheet" href="/css/LoginEntrar/inputs.css" />
+    <link rel="stylesheet" href="/css/LoginEntrar/container.css" />
+    <link rel="stylesheet" href="/css/LoginEntrar/panel.css" />
+    <link rel="stylesheet" href="/css/LoginEntrar/medias.css" />
+    <title>Educação Digital</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          {{#each loginDados.post}}
+          <form action="/{{this.function}}" method="POST" class="{{this.clase}}">
+            <h2 class="title">{{this.titulo}}</h2>
+            <div class='{{this.div}}'>
+              <i class='fas fa-user'></i>
+              <input type="text" name="usuario" placeholder="Usuario"/>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="{{this.tipo}}" name="{{this.nomefun}}" placeholder="E-mail" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="password"  placeholder="Password" />
+              
+            </div>
+            <input type="submit" value="{{this.value}}" class="{{this.classeBtn}}"/>
+          </form>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="panels-container">
+        {{#each loginDados.desing}}
+        <div class="{{this.lado}}">
+          <div class="content">
+            <h3>{{this.perg}}</h3>
+            <p>
+              {{this.indic}}
+            </p>
+            <button class="btn transparent" id="{{this.typebutton}}">
+              {{this.tipo}}
+            </button>
+          </div>
+          <img src="/imgs/SignImgs/{{this.image}}" class="image" alt="" />
+        </div>
+        {{/each}}
+      
+      </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

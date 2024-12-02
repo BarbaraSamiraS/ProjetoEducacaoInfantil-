@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inconsolata:wght@200..900&family=Parkinsans:wght@300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url("/public/imgs/SignImgs/Fundo.png");
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 5rem;
+  font-family: "Concert One", serif;
+  color: var(--color-primary-5);
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 53px;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.card img {
+  width: 100%;
+  height: 250px;
+}
+
+
+.card button {
+  width: 100px;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  background: #754ad3;
+  color: aliceblue;
+  border: none;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.card button:hover {
+  background: #290350;
+}
+
+
+
+

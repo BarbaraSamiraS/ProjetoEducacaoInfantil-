@@ -1,0 +1,47 @@
+.titleAbout{
+    text-align: center;
+    color: #a27cfc;
+    margin: 70px;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 4rem;
+    min-height: calc(100vh - 91px);
+}
+
+.box {
+    background-image: url("../../imgs/landingPage/cards.png");
+    box-sizing: border-box;
+    width: 550px;
+    height: 263px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;  
+    user-select: none;  
+    color: azure;
+    padding: 40px;
+  }
+
+  .parAbout p{
+    align-items: center; 
+    text-align: center;
+    width: 60%;
+  }
+  
+  .box:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+
+ 
+
+  
+  
