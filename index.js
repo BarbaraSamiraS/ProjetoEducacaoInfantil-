@@ -54,3 +54,5 @@ app.get('/logica', getLogicaPage);
 
 app.listen(3000, ()=>{console.log("Funcionando: Parabens mereçe um MB")})
 
+
+// Feito por Barbara Samira e Rebeca Pimentel
